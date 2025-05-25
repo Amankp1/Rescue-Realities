@@ -1,0 +1,85 @@
+.background-element {
+    background-image: url('./Background.jpeg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    font-size: 2vw; /* Use a relative font size */
+  
+    /* Add more styles if needed for background */
+  }
+  
+  .box-container {
+    position: absolute;
+    background-color: white;
+    width: 65vw;
+    height: 68vh;
+    opacity: 0.8; /* Changed opacity to a decimal value */
+    border-radius: 2vw; /* Use a relative border-radius */
+    font-size: 1vw; /* Use a relative font size */
+    color: black;
+    padding: 2vw; /* Use relative padding */
+    box-shadow: 0 2vw 3.5vw #000000; /* Use relative box-shadow values */
+    margin-top: 3%;
+  }
+  
+  .file {
+    text-align: left;
+  }
+  
+  .download-button-container {
+    text-align: center;
+    margin-top: 2vw; /* Use a relative margin */
+  }
+  
+  .download-button {
+    display: inline-block;
+    font-size: 1.5vw; /* Use a relative font size */
+    border: none;
+    border-radius: 3vw; /* Use a relative border-radius */
+    color: #fff;
+    background-image: linear-gradient(45deg, #ff1744, #ff226c, #b10c8a, #073571, #7519e4, #560172);
+    background-size: 300% 300%;
+    animation: gradientGlow 4s infinite;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 1vw; /* Use a relative padding */
+    margin-left: 2vw; /* Use a relative margin */
+  }
+  
+  .download-button:hover {
+    color: #000;
+    transform: scale(1.05);
+    animation: textAnimation 1s infinite, gradientGlow 4s infinite;
+  }
+  
+  @keyframes gradientGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      content: "Download Game";
+    }
+    25% {
+      content: "Get Ready!";
+    }
+    50% {
+      content: "Start Playing!";
+    }
+    75% {
+      content: "Almost There!";
+    }
+    100% {
+      content: "Download Game";
+    }
+  }
+  
